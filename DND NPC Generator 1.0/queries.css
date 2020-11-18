@@ -1,0 +1,157 @@
+@media only screen and (max-width: 920px) {
+  html {
+    font-size: 16px;
+    letter-spacing: 110%;
+    font-family: "IM Fell English SC", serif;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .main {
+    width: 98%;
+    margin: 0 1%;
+  }
+
+  .calc-body {
+    width: 100%;
+  }
+
+  .calc-panel {
+    min-width: 599px;
+    width: 100%;
+    grid-gap: 0px 0px;
+    padding: 10px 0px;
+    grid-template-columns: 1fr 216px 1fr;
+    border: none;
+    background-image: none;
+  }
+
+  .race {
+    margin-bottom: 25px;
+  }
+  .atr h2 {
+    letter-spacing: -2px;
+    font-weight: lighter;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+
+  h1 {
+    padding: 20px 0px 20px 0px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-weight: bold;
+    line-height: 160%;
+  }
+
+  .main {
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .calc-panel {
+    min-width: 280px;
+    width: 100%;
+    grid-gap: 0px 0px;
+    padding: 5px 0px;
+    margin: 0 auto;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 100px 100px 100px 60px 100px;
+    border: none;
+    background-image: none;
+  }
+  .generate {
+    grid-area: 5 / 2 / 6 / 4;
+    width: 120px;
+    height: 120px;
+  }
+
+  .race {
+    grid-area: 1 / 2 / 2/ 4;
+  }
+
+  .race,
+  .generate {
+    width: 120px;
+    height: 60px;
+    min-width: 93px;
+    margin: 5px auto 5px auto;
+    border: 7px;
+    font-size: 70%;
+  }
+
+  .atr {
+    width: 60px;
+    height: 60px;
+    border: 2px;
+    margin: 50px auto 0px auto;
+  }
+
+  .atr span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .atr h2 {
+    letter-spacing: -1px;
+  }
+
+  .mod {
+    border: 1px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .atr h2 {
+    top: -25px;
+    font-size: 120%;
+  }
+
+  #str {
+    grid-area: 2 / 2 / 3 / 3;
+    position: left;
+    margin: 0;
+  }
+
+  #dex {
+    grid-area: 2 / 3 / 3 / 4;
+    position: relative;
+    margin: 0 0 auto auto;
+  }
+
+  #con {
+    grid-area: 3 / 2 / 4 / 3;
+    position: left;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #int {
+    grid-area: 3 / 3 / 4 / 4;
+    position: relative;
+    margin: 0px 0px 0px auto;
+  }
+
+  #wis {
+    grid-area: 4 / 2 / 5 / 3;
+    position: left;
+    margin: 0px 0 0 0;
+  }
+
+  #cha {
+    grid-area: 4 / 3 / 5 / 4;
+    position: relative;
+    margin: 0px 0 0 auto;
+  }
+}
